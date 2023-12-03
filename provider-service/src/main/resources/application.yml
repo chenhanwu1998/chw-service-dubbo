@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    name: provider-service
+  #    注册中心的协议和地址
+  registry:
+    protocol: zookeeper
+    address: 192.168.148.138:2181
+  #    通信规则（通信协议和接口）
+  protocol:
+    name: dubbo
+    port: 20880
+  monitor:
+    protocol: registry
+
+# 开启包扫描，使用了 EaableDubbo就不需要
+#  scan:
+#    base-packages: com.chw.shop

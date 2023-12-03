@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+dubbo:
+  application:
+    name: order-service-consumer
+  registry:
+    address: zookeeper://192.168.148.138:2181
+  monitor:
+    protocol: registry
